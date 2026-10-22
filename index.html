@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Tivoli, assistente do Condomínio Jardins do Tivoli</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 46rem; margin: 0 auto; padding: 1.5rem 1rem 4rem; }
+  h1 { font-size: 1.6rem; line-height: 1.25; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { border: 1px solid #8884; padding: .45rem .6rem; text-align: left; vertical-align: top; }
+  .nota { border-left: 4px solid #8886; padding: .1rem 1rem; background: #8881; }
+  small { opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Política de Privacidade do Tivoli</h1>
+<p><small>Assistente de automação do Condomínio Edifício Jardins do Tivoli · Última atualização: 22 de outubro de 2026</small></p>
+
+<p>Esta política explica quais dados pessoais o <strong>Tivoli</strong> trata, para que, por quanto tempo e quais são os seus direitos, conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018, a LGPD).</p>
+
+<h2>1. Quem somos</h2>
+<p>O Tivoli é um conjunto de automações usado pela administração do <strong>Condomínio Edifício Jardins do Tivoli</strong> (CNPJ 55.043.848/0001-90), o <strong>controlador</strong> dos dados. Ele ajuda a organizar notas fiscais, boletos e recibos do condomínio e, quando ativado, a responder dúvidas de moradores pelo WhatsApp.</p>
+<p>Contato do condomínio para assuntos de privacidade: <strong>jardinsdotivoli@gmail.com</strong>. Responsável pelo atendimento: <strong>Síndico</strong>.</p>
+
+<h2>2. O que o Tivoli faz</h2>
+<ul>
+  <li><strong>Gestão de documentos do condomínio (uso interno da administração):</strong> lê e-mails da caixa da administração para encontrar notas fiscais e boletos, lê arquivos enviados pelo administrador por um bot do Telegram, guarda os arquivos no Google Drive e registra os dados (emissor, valor, vencimento, pagamento) em um banco de dados. Também cruza esses dados com o extrato bancário do condomínio para conferir pagamentos.</li>
+  <li><strong>Atendimento a moradores pelo WhatsApp (em implantação):</strong> o morador envia uma mensagem iniciada por <code>/bot</code> e recebe respostas sobre avisos, regras do condomínio e a prestação de contas mensal em PDF.</li>
+</ul>
+
+<h2>3. Dados tratados</h2>
+<table>
+  <thead><tr><th>Quem</th><th>Dados</th><th>Origem</th><th>Finalidade</th></tr></thead>
+  <tbody>
+    <tr><td>Fornecedores e prestadores</td><td>Nome ou razão social, CNPJ/CPF, valores, datas, número e conteúdo de notas, boletos e recibos; trechos do extrato bancário do condomínio</td><td>E-mails e arquivos recebidos pela administração; extrato bancário importado pela administração</td><td>Controle financeiro e prestação de contas do condomínio</td></tr>
+    <tr><td>Administrador do condomínio</td><td>Identificador do Telegram, mensagens e arquivos enviados ao bot</td><td>Telegram</td><td>Operar o cadastro de documentos</td></tr>
+    <tr><td>Moradores (WhatsApp)</td><td>Número de telefone (ou identificador fornecido pela Meta), unidade, texto das mensagens iniciadas por <code>/bot</code>, aceite de uso</td><td>O próprio morador</td><td>Responder dúvidas, controlar o acesso e limitar abusos</td></tr>
+  </tbody>
+</table>
+<p>No atendimento pelo WhatsApp, as respostas mostram apenas o nome e a unidade ligados ao número de telefone de quem fez o pedido. Dados de outros moradores não aparecem.</p>
+<p>O Tivoli <strong>não</strong> trata dados sensíveis dos moradores (como saúde ou biometria) e <strong>não</strong> envia mensagens de marketing.</p>
+
+<h2>4. Mensagens do WhatsApp sem o comando <code>/bot</code></h2>
+<p>As conversas normais com a administração continuam sendo atendidas por uma pessoa pelo aplicativo WhatsApp Business. O Tivoli só processa mensagens que começam com <code>/bot</code>. As demais são descartadas pela automação no mesmo instante: não são lidas por inteligência artificial, gravadas, respondidas nem registradas.</p>
+
+<h2>5. Bases legais (art. 7º da LGPD)</h2>
+<ul>
+  <li><strong>Legítimo interesse e execução das atividades do condomínio</strong> (gestão financeira e prestação de contas), para dados de fornecedores e documentos fiscais.</li>
+  <li><strong>Consentimento</strong> do morador, dado ao enviar <code>/bot aceito</code>, para o atendimento automático pelo WhatsApp. Você pode retirar o consentimento a qualquer momento (veja o item 9).</li>
+  <li><strong>Cumprimento de obrigação legal ou regulatória</strong>, quando o condomínio precisa guardar documentos fiscais e contábeis.</li>
+</ul>
+
+<h2>6. Com quem os dados são compartilhados</h2>
+<p>O Tivoli usa prestadores de tecnologia que processam os dados em nome do condomínio (operadores):</p>
+<table>
+  <thead><tr><th>Serviço</th><th>Para quê</th></tr></thead>
+  <tbody>
+    <tr><td>Google (Gmail e Google Drive)</td><td>Ler e-mails de notas e boletos da administração e armazenar os arquivos</td></tr>
+    <tr><td>Telegram</td><td>Canal do administrador com o bot de cadastro e de avisos</td></tr>
+    <tr><td>Meta (WhatsApp Business)</td><td>Canal de atendimento aos moradores</td></tr>
+    <tr><td>Supabase</td><td>Banco de dados dos registros</td></tr>
+    <tr><td>OpenRouter e provedores de modelos de IA</td><td>Interpretar o texto de documentos e de perguntas</td></tr>
+    <tr><td>Servidor próprio (VPS) e Cloudflare</td><td>Executar as automações (n8n) e proteger o acesso</td></tr>
+    <tr><td>Grafana/Loki</td><td>Monitorar o funcionamento. Os registros de monitoramento não trazem o conteúdo das mensagens nem números de telefone completos</td></tr>
+  </tbody>
+</table>
+<p>Não vendemos dados pessoais. Alguns desses prestadores armazenam dados fora do Brasil (transferência internacional, art. 33 da LGPD), com as garantias contratuais que oferecem.</p>
+
+<h2>7. Uso de dados do Google</h2>
+<p>O Tivoli acessa o Gmail e o Google Drive da administração do condomínio por autorização do titular da conta. O acesso serve apenas para: (a) encontrar e-mails de notas fiscais e boletos; (b) marcá-los como já processados com um rótulo; e (c) criar e guardar arquivos em pastas do Drive do condomínio.</p>
+<p>O uso e a transferência de informações recebidas das APIs do Google para qualquer outro aplicativo seguirão a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado. Os dados do Google não são usados para publicidade, não são vendidos e não são lidos por pessoas, salvo para segurança, cumprimento da lei ou com autorização da administração.</p>
+
+<h2>8. Por quanto tempo guardamos</h2>
+<ul>
+  <li><strong>Documentos fiscais e registros financeiros:</strong> enquanto forem necessários à contabilidade e à prestação de contas do condomínio, e pelos prazos legais de guarda.</li>
+  <li><strong>Pedidos e respostas do atendimento por WhatsApp:</strong> 30 dias.</li>
+  <li><strong>Execuções técnicas da automação:</strong> 14 dias.</li>
+  <li><strong>Cadastro do morador (número e unidade):</strong> enquanto durar a relação com o condomínio ou até você retirar o consentimento.</li>
+</ul>
+
+<h2>9. Seus direitos</h2>
+<p>Você pode pedir, a qualquer momento: confirmação de que tratamos seus dados, acesso, correção, anonimização, eliminação, portabilidade, informação sobre com quem compartilhamos e a revogação do consentimento. Para sair do atendimento automático, envie <code>/bot sair</code> pelo WhatsApp ou escreva para <strong>jardinsdotivoli@gmail.com</strong>. Respondemos em até 15 dias. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+
+<h2>10. Segurança</h2>
+<p>O acesso às automações e ao banco de dados é restrito. O atendimento a moradores usa uma credencial separada, limitada à leitura de informações liberadas pela administração. O servidor fica atrás de um túnel protegido, os segredos ficam fora dos arquivos do projeto e há monitoramento com alerta de falhas. Nenhum sistema é totalmente imune a riscos; em caso de incidente com risco relevante, avisaremos os afetados e a ANPD, conforme a lei.</p>
+
+<h2>11. Prestação de contas em PDF</h2>
+<p>O PDF de prestação de contas é fornecido pela administradora do prédio e publicado pelo síndico após conferência. Ele só traz totais agregados. Se você identificar qualquer informação que permita reconhecer um morador ou uma unidade, avise <strong>jardinsdotivoli@gmail.com</strong> para a correção imediata.</p>
+
+<h2>12. Alterações desta política</h2>
+<p>Podemos atualizar esta política. A data da última atualização fica no topo; mudanças relevantes serão comunicadas pelos canais do condomínio.</p>
+
+<p class="nota"><strong>Contato:</strong> Condomínio Edifício Jardins do Tivoli · <strong>jardinsdotivoli@gmail.com</strong> · <strong>Av. Dr. Cesário Bastos, 325 - Vila Bastos, Santo André - SP - CEP 09040-330</strong></p>
+
+</body>
+</html>
